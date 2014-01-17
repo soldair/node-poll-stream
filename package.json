@@ -1,7 +1,7 @@
 {
   "name": "poll-stream",
   "description": "poll a function on an interval emit data",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": "git://github.com/soldair/node-poll-stream.git"
   },
