@@ -6,7 +6,8 @@ module.exports = function(cb,interval){
   var pause = false;
   var resume = false;
 
-  (function fn(){
+  
+  function fn(){
     if(stop) return;
     if(pause) return (resume = fn); 
     var t = Date.now();
@@ -26,7 +27,9 @@ module.exports = function(cb,interval){
       },interval-e);
 
     });
-  }())
+  }
+
+  process.nextTick(fn);
 
   s.on('end',function(){
     stop = true;
