@@ -1,0 +1,19 @@
+{
+  "name": "poll-stream",
+  "description": "poll a function on an interval emit data",
+  "version": "0.0.1",
+  "repository": {
+    "url": "git://github.com/soldair/node-poll-stream.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "Ryan Day",
+  "dependencies": {
+    "through": "~2.3.4"
+  },
+  "devDependencies": {
+    "tape": "~2.3.2"
+  }
+}
